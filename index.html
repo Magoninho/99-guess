@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>I'm gonna guess your number</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<div id="main">
+		<h1 style="color: #61afef;">Think a number between 1 and 99</h1>
+		<button onclick="start()">Ok, begin</button>
+	</div>
+
+	<div style="display: none;" id="game">
+		<h1 id="question">Is your number here?</h1>
+		<pre id="numbers">
+
+		</pre>
+		<button onclick="answer(true)">yes</button>
+		<button onclick="answer(false)" class="no">no</button>
+	</div>
+
+	<script src="scripts/script.js"></script>
+
+</body>
+</html>

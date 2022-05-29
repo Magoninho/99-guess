@@ -1,0 +1,31 @@
+body {
+	background-color: #272c35;
+	color: white;
+	font-family: monospace;
+	text-align: center;
+}
+
+button {
+	background-color: #98c379;
+	border: 1px solid #98c379;
+	font-size: large;
+	font-family: monospace;
+	cursor: pointer;
+}
+
+pre {
+	font-size: x-large;
+}
+
+.no {
+	background-color: #e06c75;
+	border: 1px solid #e06c75;
+}
+
+#game, #main {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
