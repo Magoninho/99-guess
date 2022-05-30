@@ -5,6 +5,14 @@ body {
 	text-align: center;
 }
 
+article {
+	text-align: left;
+	margin-right: 20%;
+	margin-left: 20%;
+	padding: 10px;
+	background-color: #21242b;
+}
+
 button {
 	background-color: #98c379;
 	border: 1px solid #98c379;
@@ -15,14 +23,38 @@ button {
 
 pre {
 	font-size: x-large;
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+
+p {
+	font-size: large;
+}
+
+a {
+	color: #e06c75;	
+}
+
 
 .no {
 	background-color: #e06c75;
 	border: 1px solid #e06c75;
 }
 
-#game, #main {
+#end {
+	display: none;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#game,
+#main {
 	margin: 0;
 	position: absolute;
 	top: 50%;

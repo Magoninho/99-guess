@@ -1,6 +1,7 @@
 let mainDiv = document.getElementById("main");
 let gameDiv = document.getElementById("game");
 let numbersPre = document.getElementById("numbers");
+let numberspan = document.getElementById("your-number");
 let index = 0;
 let answers = "";
 
@@ -32,6 +33,12 @@ function display() {
 	numbers.innerText = generateNumbers(index);
 }
 
+function displayEndStuffBullshit(answer) {
+	numberspan.innerText = answer;
+	gameDiv.style = "display: none;";
+	document.getElementById("end").style.display = "initial";
+}
+
 function start() {
 	mainDiv.style = "display: none;";
 	gameDiv.style = "display: initial;";
@@ -46,7 +53,7 @@ function answer(yes) {
 	if (index <= 6) {
 		display();
 	} else {
-		alert(finalAnswer());
+		displayEndStuffBullshit(finalAnswer());
 	}
 }
 
