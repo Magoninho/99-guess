@@ -34,6 +34,9 @@ function display() {
 }
 
 function displayEndStuffBullshit(answer) {
+  if (answer > 99 || answer < 1) {
+    answer = "F#ck u lier";
+  }
 	numberspan.innerText = answer;
 	gameDiv.style = "display: none;";
 	document.getElementById("end").style.display = "initial";
